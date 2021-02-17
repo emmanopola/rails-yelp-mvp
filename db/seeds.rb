@@ -16,7 +16,7 @@ puts "Creating restaurants..."
     name: Faker::Movies::HarryPotter.character,
     address: Faker::Movies::HarryPotter.location,
     phone_number: Faker::Number.number(digits: 10),
-    category: ["chinese", "italian", "japanese", "french", "belgian"],
+    category: ["chinese", "italian", "japanese", "french", "belgian"].sample
     )
   puts "Created #{restaurant.name}"
 end
